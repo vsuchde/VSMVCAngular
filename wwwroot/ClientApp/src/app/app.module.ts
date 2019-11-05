@@ -11,6 +11,7 @@ import { DeviceDetailsComponent } from './device-details/device-details.componen
 import { DeviceMgmtServiceService } from './device-mgmt-service.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { AddDeviceComponent } from './add-device/add-device.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: '', component: ProductListComponent },
       { path: 'devices/:deviceId', component: DeviceDetailsComponent},
       { path: 'cart', component:CartComponent},
-      {path:'shipping',component:ShippingComponent}
+      {path:'shipping',component:ShippingComponent},
+      {path:'adddevice',component:AddDeviceComponent}
 
     ])
   ],
@@ -31,7 +33,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductListComponent,
     DeviceDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    AddDeviceComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [DeviceMgmtServiceService]
